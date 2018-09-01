@@ -2,9 +2,9 @@
 Repo for Tasks for Wickes Interview
 
 Utilising the following:
-- `Webpack - curtosy of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)`
-- `Pre-compiled using SASS utlising the SCSS syntax`
-- `Written using [BEM methodology](http://getbem.com/)`
+- Webpack - curtosy of [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)
+- Pre-compiled using SASS utlising the SCSS syntax
+- Written using [BEM methodology](http://getbem.com/)
 
 Note: The compiled (un-minified) .css file has been uploaded to this repo as part of the task, normally this would not be the case!
 
