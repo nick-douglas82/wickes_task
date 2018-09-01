@@ -1,0 +1,22 @@
+/* Import Demo Styles - not relevant to task, just aesthetics */
+@import "demo/task";
+
+/* Import settings */
+@import 'settings/variables';
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/* Import Base Styles */
+@import 'base/reset';
+@import 'base/base';
+
+/* Import Mixins */
+@import "mixins/background-image";
+
+/* Import Components */
+@import "components/buttons";
+@import "components/mediaCard";
+@import "components/category";
+@import "components/productTag";
+@import "components/pageHeader";

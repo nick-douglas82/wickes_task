@@ -1,0 +1,107 @@
+.mediaCard {
+    padding: 20px 10px;
+
+    &__title {
+        font-weight: 700;
+    }
+
+    &__header {
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    &__footer {
+        .footer__title {
+            font-weight: 700;
+            font-size: 22px;
+            color: $grey-light;
+            text-align: center;
+            margin-bottom: 22px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        @include make-col-ready();
+        @include make-col(12);
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(8);
+        }
+
+        .inner {
+            height: 100%;
+            @include background-image("http://placehold.it/585x393");
+        }
+    }
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        @include make-col-ready();
+        @include make-col(12);
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(4);
+        }
+    }
+
+    &__detail {
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: auto;
+        }
+
+        .detail {
+            &__header {
+
+                .price__small {
+                    font-size: 75%;
+                    display: flex;
+                    margin-left: auto;
+                    text-align: right;
+                    max-width: 70%;
+                }
+            }
+
+            &__price {
+                display: flex;
+
+                .price {
+                    font-size: 22px;
+
+                    &__tagline {
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &__flash {
+        border: 1px solid $highlight;
+        padding: 0 10px;
+        text-align: center;
+        color: $highlight;
+        margin: 21px 0 24px 0;
+
+        .flash {
+            padding: 10px 0;
+
+            &:first-of-type {
+                border-bottom: 1px solid $highlight;
+            }
+
+            &--highlighted {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__call-to-action {
+        background-color: #f4f4f4;
+    }
+}

@@ -1,0 +1,17 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__icon {
+        width: 30px;
+        height: 30px;
+        background-color: #b1a7a3;
+    }
+
+    &__name {
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
